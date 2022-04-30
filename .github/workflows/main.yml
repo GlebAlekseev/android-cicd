@@ -13,5 +13,3 @@ jobs:
       - run: ./project_1/gradlew test
       - run: ./project_1/gradlew assembleRelease --stacktrace
       - run: ./project_1/gradlew bundleRelease
-	
-
