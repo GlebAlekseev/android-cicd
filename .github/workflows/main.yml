@@ -10,8 +10,8 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-java@v1
         with: {java-version: 1.8}
-      - name: Run unit tests
-        run: |
-	./project_1/gradlew test
-        ./project_1/gradlew assembleRelease --stacktrace
-        ./project_1/gradlew bundleRelease
+      - run: ./project_1/gradlew test
+      - run: ./project_1/gradlew assembleRelease --stacktrace
+      - run: ./project_1/gradlew bundleRelease
+	
+
